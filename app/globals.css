@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121212; /* Light Mode Default */
+  --foreground: #f9f3f3; /* Dark Text */
+}
+
+/* Ensure Background is Always Set Regardless of System Preference */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* 🖱️ Custom Scrollbar */
+/* 🖱️ Scrollbar Base */
+::-webkit-scrollbar {
+  width: 14px; /* Scrollbar width */
+}
+
+/* 🎨 Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+}
+
+/* 🔵🟣🟢 Floating Beads Effect */
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #3b82f6 50%, transparent 30%) 0px 0px / 14px 14px, 
+              radial-gradient(circle, #ec4899 30%, transparent 30%) 0px 20px / 14px 14px, 
+              radial-gradient(circle, #22c55e 30%, transparent 30%) 0px 40px / 14px 14px; 
+  background-repeat: repeat-y;
+  border-radius: 10px;
+}
+
+/* ✨ Hover Effect - Glowing Beads */
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(circle, #2563eb 50%, transparent 40%) 0px 0px / 14px 14px, 
+              radial-gradient(circle, #db2777 50%, transparent 40%) 0px 20px / 14px 14px, 
+              radial-gradient(circle, #16a34a 50%, transparent 40%) 0px 40px / 14px 14px; 
+  background-repeat: repeat-y;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
