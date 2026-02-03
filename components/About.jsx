@@ -25,7 +25,7 @@ function About  ()  {
   custom={0.3}
   className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-600 animate-pulse"
 >
-  Trust me, I'm a Backend / Full Stack Developer
+  Trust me, I'm a Backend / Full Stack web Developer
 </motion.h1>
 
 <motion.h2
